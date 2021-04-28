@@ -49,7 +49,6 @@ def parameter(raw):
         if len(args) < 2:
             return "no argument given"
         return str(trie.autocomplete(args[1]))
-    
     else:
         return "invalid command: '" + args[0] + "', check spelling and try again"
 
