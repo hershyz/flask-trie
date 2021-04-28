@@ -38,6 +38,8 @@ class Trie:
                 if child.data == target_char:
                     node = child
                     found = True
+                    if i == len(chars) - 1:
+                        node.end = True
             if not found:
                 end = False
                 if i == len(chars) - 1:
@@ -61,15 +63,27 @@ class Trie:
         if node.end:
             return True
         return False
+    
+    def autocomplete(self, prefix):
+        words = self.get_words()
+        result = []
+        for word in words:
+            chars = list(word)
+            if len(word) >= len(prefix):
+                sub = ""
+                for i in range(len(prefix)):
+                    sub += chars[i]
+                if sub == prefix:
+                    result.append(word)
+        return result
 
 
 
 trie = Trie()
-trie.add_word("a")
 trie.add_word("ap")
-trie.add_word("app")
-trie.add_word("appl")
-trie.add_word("wab")
-trie.add_word("waby")
+trie.add_word("apple")
+trie.add_word("apply")
+trie.add_word("boat")
+trie.add_word("bot")
 
-print(trie.get_words())
+print(trie.autocomplete("bo"))
