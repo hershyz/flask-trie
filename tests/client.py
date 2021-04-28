@@ -6,11 +6,10 @@ def help():
     print("--- commands ---")
     print("help:          shows all available CLI commands")
     print("add            [words]: add words to the trie in one operation")
+    print("delete         [words]: delete words from the trie in one operation")
     print("search         [words]: return words contained and not contained in the trie from the argument array")
     print("display:       displays the trie to the console")
     print("autocomplete:  (keyword): returns a list of autocomplete suggestions based on the argument")
-
-    # todo: make delete function
 
 def commandLoop():
 
