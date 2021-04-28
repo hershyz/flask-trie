@@ -27,7 +27,7 @@ class Trie:
     def add_word(self, word):
 
         if self.search(word):
-            return
+            return False
 
         node = self.root
         chars = list(word)
@@ -47,6 +47,8 @@ class Trie:
                 new_node = Node(target_char, end)
                 node.children.append(new_node)
                 node = new_node
+            
+        return True
     
     def search(self, word):
         node = self.root
@@ -76,14 +78,3 @@ class Trie:
                 if sub == prefix:
                     result.append(word)
         return result
-
-
-
-trie = Trie()
-trie.add_word("ap")
-trie.add_word("apple")
-trie.add_word("apply")
-trie.add_word("boat")
-trie.add_word("bot")
-
-print(trie.autocomplete("bo"))
