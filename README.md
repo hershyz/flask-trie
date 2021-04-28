@@ -25,6 +25,8 @@ Additionally, procfile and deployment requirements can be found <a href="https:/
   <li><a href="https://github.com/hershyz/trie/blob/main/client_documentation.md">Client</a></li>
 </ul>
 
+<br>
+
 <p>
   <strong>Some Final Thoughts</strong><br>
   Prior to starting this project, my only knowledge of backend development consisted of a few YouTube videos that I had watched on Flask. I did not know how to deploy a web application, let alone devise a system to fulfill client requests comprehensively. In addition, the recursive structure of linked character nodes was not easy for me to visualize. I found myself stepping through testcases on a whiteboard more than actually coding. In retrospect (given more time), I would have written this in Nodejs because of its asynchronous nature. But at the end of the day, Flask was still a solid choice for the backend.<br>
