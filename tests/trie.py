@@ -78,3 +78,10 @@ class Trie:
                 if sub == prefix:
                     result.append(word)
         return result
+
+    def delete(self, to_delete):
+        words = self.get_words()
+        self.root.children.clear()
+        for word in words:
+            if word not in to_delete:
+                self.add_word(word)
