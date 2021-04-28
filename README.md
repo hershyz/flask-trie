@@ -4,7 +4,7 @@
   [Slingshot Take-Home Challenge]
 </p>
 
-<h3>Overview</j3>
+<h3>Overview</h3>
 <p>
   The code in this repository contains a global state <a href="https://github.com/hershyz/trie/tree/main/server">server</a>, and a <a href="https://github.com/hershyz/trie/tree/main/client">client CLI</a> to access the server.<br>
   The server uses a trie object (a tree of linked character nodes) to store keywords in a set.<br>
