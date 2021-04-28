@@ -21,8 +21,8 @@ Additionally, procfile and deployment requirements can be found <a href="https:/
 
 <h3>Additional Docs</h3>
 <ul>
-  <li><a href="https://github.com/hershyz/trie/blob/main/server_documentation.md">Server</a></li>
-  <li><a href="https://github.com/hershyz/trie/blob/main/client_documentation.md">Client</a></li>
+  <li><a href="https://github.com/hershyz/trie/blob/main/server_documentation.md">How the Server Works (Hosting + Client Interactions)</a></li>
+  <li><a href="https://github.com/hershyz/trie/blob/main/client_documentation.md">Client CLI (Installation and Commands)</a></li>
 </ul>
 
 <br>
