@@ -49,6 +49,26 @@ def parameter(raw):
         if len(args) < 2:
             return "no argument given"
         return str(trie.autocomplete(args[1]))
+
+    if args[0] == "delete":
+        if len(args) < 2:
+            return "no argument(s) given"
+        to_delete = []
+        i = 1
+        while i < len(args):
+            to_delete.append(args[i])
+            i += 1
+        trie.delete(to_delete)
+        result = trie.get_words()
+        deleted = []
+        not_deleted = []
+        for word in to_delete:
+            if word not in result:
+                deleted.append(word)
+            else:
+                not_deleted.append(word)
+        return "deleted: " + str(deleted) + ", not deleted: " + str(not_deleted)
+
     else:
         return "invalid command: '" + args[0] + "', check spelling and try again"
 
