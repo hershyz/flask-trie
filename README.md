@@ -9,7 +9,7 @@
   The code in this repository contains a global state <a href="https://github.com/hershyz/trie/tree/main/server">server</a>, and a <a href="https://github.com/hershyz/trie/tree/main/client">client CLI</a> to access the server.<br>
   The server uses a trie object (a tree of linked character nodes) to store keywords in a set.<br>
   The client CLI uses HTTP GET requests to send commands to the server and retrieve information from the server.<br>
-  The server is hosted through <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>, but requirements/procfiles are included in the source for easy deployment to AWS, GCP, Azure, Heroku, etc.
+  The application is hosted through <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>, but requirements/procfiles are included in the source for easy deployment to AWS, GCP, Azure, Heroku, etc.
 </p>
 
 <h3>Requirements</h3>
