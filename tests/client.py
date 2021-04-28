@@ -4,19 +4,26 @@ print("Trie CLI (github.com/hershyz/trie) - type 'help' for help")
 
 def help():
     print("--- commands ---")
-    print("help: shows all available CLI commands")
-    print("add (keyword): adds a keyword to the trie if it does not already exist")
-    print("delete (keyword): deletes a keyword from the trie if it exists")
-    print("search (keyword): finds out if a keyword is contained within the trie")
-    print("display: displays the trie to the console")
+    print("help:          shows all available CLI commands")
+    print("add            [words]: add words to the trie in one operation")
+    print("search         [words]: return words contained and not contained in the trie from the argument array")
+    print("display:       displays the trie to the console")
+    print("autocomplete:  (keyword): returns a list of autocomplete suggestions based on the argument")
+
+    # todo: make delete function
 
 def commandLoop():
 
     raw = input("> ")
+
+    if len(raw) < 1:
+        commandLoop()
+
     args = raw.split(" ")
     
     if args[0] == "help":
         help()
+
     else:
         url = ""
         for i in range(len(args)):
