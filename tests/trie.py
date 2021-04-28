@@ -14,7 +14,7 @@ class Trie:
         self.words.clear()
         for child in self.root.children:
             self.get_words_helper(child, "")
-        print(self.words)
+        return self.words
 
     def get_words_helper(self, node, prefix):
         new_prefix = prefix + node.data
@@ -65,9 +65,11 @@ class Trie:
 
 
 trie = Trie()
-trie.add_word("ab")
-trie.add_word("ac")
-trie.add_word("abc")
-trie.add_word("ba")
+trie.add_word("a")
+trie.add_word("ap")
+trie.add_word("app")
+trie.add_word("appl")
+trie.add_word("wab")
+trie.add_word("waby")
 
-trie.get_words()
+print(trie.get_words())
