@@ -20,6 +20,8 @@ autocomplete:  (keyword): returns a list of autocomplete suggestions based on th
 <br>
 <br>
 
-<p><strong>NOTE:</strong><br>
+<p><strong>NOTES:</strong><br>
+  The add, delete, and search commands return an output of arrays in the following format:<br>
+  <code>added/deleted/found: [], not added/not deleted/not found: []</code><br>
   If testing the client on a different webserver (or locally), the address in <code>r = requests.get([address here]/ + url)</code> must be changed (line 33).
 </p>
