@@ -1,7 +1,6 @@
 <h1>hershyz/trie</h1>
 <p>
-  Backend autocomplete algorithm using Flask + Trie Nodes 🔍<br>
-  [Slingshot Take-Home Challenge]
+  Backend autocomplete algorithm using Flask + Trie Nodes 🔍
 </p>
 
 <h3>Overview</h3>
