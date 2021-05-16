@@ -37,6 +37,4 @@ Additionally, procfile and deployment requirements can be found <a href="https:/
     <li>Code working locally ≠ the behavior of the same code when deployed</li>
     <li>To my surprise, Python is an extremely viable tool for object oriented tasks</li>
   </ul>
-  <br>
-  <i>PS: The <code>tests</code> folder in this repo was used for updates as I was testing the server locally. If for some reason the server is not working, please DM me on Discord or send me an email.</i>
 </p>
