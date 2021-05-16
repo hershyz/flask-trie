@@ -1,4 +1,4 @@
-<h1>hershyz/trie</h1>
+<h1>hershyz/autocomplete-trie</h1>
 <p>
   Backend autocomplete algorithm using Flask + Trie Nodes 🔍
 </p>
